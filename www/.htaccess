@@ -1,0 +1,28 @@
+Options -Indexes
+Options +FollowSymLinks
+IndexIgnore */*
+AddDefaultCharset UTF-8
+RewriteEngine on
+
+# Hide .SVN Folders
+RewriteRule ^(.*/)*\.svn/ / [F,L]
+
+# redirect www to non-www (http & https)
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+#Set CKFinder values to upload big file video
+php_value upload_max_filesize 100M
+php_value post_max_size 100M

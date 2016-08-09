@@ -1,0 +1,106 @@
+#page {
+	min-height: 200px !important;
+}
+#menu_box_container {
+	height: 300px;
+}
+#menu_box {
+    float: right;
+    display: none;
+    margin-top: 7px;
+}
+#menu_tabs {
+	overflow: hidden;
+}
+#menu_tabs a {
+	float: left;
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	padding: 5px 10px;
+	border-top: 1px solid silver;
+	border-right: 1px solid silver;
+	background-color: #FFFFFF;
+	-moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -khtml-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+}
+#menu_tabs a.first {
+	border-left: 1px solid silver;
+}
+#menu_tabs a:hover {
+	background-color: #D3D1D1;
+}
+#menu_tabs a.active {
+	background-color: #D3D1D1;
+}
+#menu_tabs a.selected {
+	background-color: #F9C0C0;
+}
+#menu_content {
+	border: 1px solid silver;
+	overflow: hidden;
+	padding: 8px 0px;
+}
+
+#menu_content .content_row {
+	padding: 5px;
+	float: left;
+	width: 100%;
+}
+#menu_content .title {
+	float: left;
+	width: 40%;
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 4px;
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+#menu_content .field {
+	text-align: left;
+}
+#menu_content .field input {
+	width: 200px;
+	border: 1px solid silver;
+	padding: 3px;
+}
+#menu_content .field select {
+	width: 208px;
+	border: 1px solid silver;
+	padding: 3px;
+}
+#menu_content a.button {
+	width: 200px;
+	border: 1px solid silver;
+	padding: 3px;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background-color: #F7F7F7;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+#menu_content a.button:hover {
+	background-color: #D3D1D1;
+}
+#menu_content .add_to_menu {
+	font-size: 13px;
+	padding-top: 6px;
+}
+.hidden {
+	display: none;
+}
+.icons-selector {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    float: left;
+    height: 120px;
+    overflow-y: scroll;
+    padding: 6px;
+}

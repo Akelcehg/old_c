@@ -1,0 +1,132 @@
+.language {
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+    padding: 10px 10px;
+    clear: both;
+    margin-bottom: 0px !important;
+}
+.language td.title {
+    vertical-align: middle;
+}
+.language input[type=text] {
+    width: 190px;
+    border: 1px solid silver;
+    padding: 2px;
+}
+.language select {
+    width: 196px;
+    border: 1px solid silver;
+    padding: 2px;
+}
+
+.language tr {padding:4px;}
+
+.language_title {
+    float: left;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.language_remove {
+    float: right;
+    padding-top: 7px;
+    padding-right: 10px;
+}
+.ui-widget {
+    font-size: 12px !important;
+}
+.no_users, .no_users_qa, .no_users_qa_second {
+    width: 965px;
+    text-align: center;
+    background: none repeat scroll 0 0 #C3D9FF;
+    padding: 4px 10px 4px 5px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.items {
+    margin-top: 10px;
+    /*display: none;*/
+}
+.qa_column {
+    display: none;
+}
+.language_head {
+    background-color: #EAE8E8;
+    width: 100%;
+    float: left;
+    padding-top: 5px;
+}
+.qa_second_column {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+.language_container {
+    float: right;
+}
+#languages_dropdowns {
+    float: left; 
+    width: 28%;
+}
+a.language_dropdown, a.language_dropdown:active, a.language_dropdown:visited {
+    text-decoration: none;
+    color: black;
+    border: 1px solid silver;
+    width: 280px;
+    text-align: center;
+    float: left;
+    padding: 5px 0px;
+    background-color: #F2F2F2;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+a.language_dropdown:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #9BEF9D;
+}
+a.language_dropdown_active {
+    background-color: #9BEF9D;
+    color: black;
+}
+
+.language_job_sidebar {
+    text-decoration: none;
+    color: black;
+    border: 1px solid silver;
+    text-align: left;
+    float: left;
+    width: 270px;
+    padding: 3px 5px;
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    display: none;
+}
+.language_job_sidebar:hover {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+#selected_asset {
+    /*float: left; 
+    width: 100%;
+    clear: both;
+    display: none;*/
+}
+/*
+#selected_asset .selected_file {
+    float: left; 
+    padding: 5px 0px; 
+    color: green;
+    word-wrap: break-word;
+    width: 460px;
+}
+*/
+.ui-autocomplete.ui-widget-content a {
+    color: #666;
+}
+
+.ui-autocomplete.ui-widget-content .ui-state-focus {
+    background: none;
+    border: none;
+}

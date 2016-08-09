@@ -1,0 +1,154 @@
+// Add anything custom here -- mixins, variable overrides.
+// by adding things here instead of overriding existing .LESS files, it makes merging changes on product updates easier
+
+footer.bottom {
+	.navbar {
+		min-height: @font-size-base*(1/1.5*2+1);
+	}
+	.nav {
+		width: auto;
+	}
+	nav ul li > a {
+		padding: @font-size-base/1.5 @font-size-base/2;
+		&:before {
+			display: none;
+		}
+	}
+	.fb-like {
+		padding: @font-size-base/1.5 @font-size-base/2;
+	}
+}
+
+.aside-n-cell {
+	.clearfix;
+	display: table;
+	.aside {
+		display: table-cell;
+		width: 100%/12*3;
+		vertical-align: middle;
+	}
+	.cell {
+		display: table-cell;
+		width: 100%/12*9;
+		vertical-align: middle;
+		text-align: left;
+		padding: 0 @font-size-base/2;
+	}
+}
+
+.easy-pie-chart {
+	.overflowned-label {
+		// background-color: rgba(255,255,255,0.7); 
+		// border: 1px dashed rgba(0,0,0,0.2);
+		padding: 0 0.3em;
+		position: relative; 
+		z-index: 1;
+	}
+}
+
+ul.dropdown-menu {
+	&.bg-hover-danger {
+		li a:hover {
+			background-color: @brand-danger;
+		}
+	}
+	&.bg-hover-primary {
+		li a:hover {
+			background-color: @brand-primary;
+		}
+	}
+	&.bg-hover-success {
+		li a:hover {
+			background-color: @brand-success;
+		}
+	}
+	&.bg-hover-warning {
+		li a:hover {
+			background-color: @brand-warning;
+		}
+	}
+	&.bg-hover-info {
+		li a:hover {
+			background-color: @brand-info;
+		}
+	}
+}
+
+.custom-pads-n-margs(@value) {
+	@inClass: ~`'@{value}'.toString().replace('.', '-').replace('px', '')`;
+	.mt_@{inClass} {
+		margin-top: @value*1px;
+	}
+	.mb_@{inClass} {
+		margin-bottom: @value*1px;
+	}
+}
+.proffesional-expirience-rate-item > *{
+	padding-left: @font-size-base !important;
+	padding-right: @font-size-base !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+
+.custom-pads-n-margs(@font-size-base/2);
+
+.required::-webkit-input-placeholder::after {
+    content: ' *';
+    color: lighten(@brand-danger, 50%);
+}
+.required:-moz-placeholder::after {
+    content: ' *';
+    color: lighten(@brand-danger, 50%);
+}
+span.required {
+	color: @brand-danger;
+}
+
+
+.margin-auto {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.no-float {
+	float: initial;
+}
+
+.phone-field {
+	float: left;
+	&.code {
+		width: 25%;
+		input {
+			border-right-width: 0 !important;
+		}
+	}
+	&.number {
+		width: 75%;
+	}
+}
+
+@import "part/map.less";
+
+
+.stepsWrapper {
+	width: 100%;
+	height: 74px;
+	/*border-top: 1px solid #000;*/
+	overflow: hidden;
+	border-bottom: 1px solid #C2C2C2;
+	position: relative;
+
+	.contract-header h1 {
+		margin-top: 23px;
+	}
+
+	.steps {
+		margin-top: 13px;
+		text-align: center;
+		background: #fff;
+		text-align: center;
+	}
+}
+
+
+@import "inc/countdown.less";

@@ -1,0 +1,309 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #555;
+	font: normal 10pt Arial,Helvetica,sans-serif;
+	background: #fff;
+}
+
+#page
+{
+/*	background: white;*/
+}
+
+/* NEW DESIGN */
+
+#header { width: 1000px; margin: 0 auto; }
+#header .left { float: left; width: 230px; }
+
+#header .left h1 { font-size: 22px; color: #000; font-weight: normal; margin: 10px 0 8px 0; padding: 0; }
+
+#header .left .time 
+{ 
+    font-family: Arial; 
+    font-size: 12px; 
+    padding: 5px 0; 
+    background: #000;
+    color: #e8e6e7; 
+    text-align: center; 
+    border-radius: 7px;
+    width: 255px;
+}
+
+#header .right { float: left; width: 770px; }
+
+.container { width: 1000px; margin: 0 auto; }
+
+/*#filter 
+{ 
+    margin-left: 5px; 
+    padding: 7px 0 7px 0; 
+    color: #3f3f3b; 
+    border-bottom: 1px solid #b5b5b1; 
+}*/
+
+#filter label { font-size: 12px; margin-right: 5px; }
+/*#filter select { 
+    background: #cfcfcc; 
+    border: 0; 
+    padding: 1px 0 1px 6px; 
+}*/
+
+/*#filter span { 
+    margin: 0 10px; 
+    font-size: 12px; 
+    color: #3f3f3b; 
+}*/
+#filter #searchField { background: #cfcfcc; height: 18px; border: 0; width: 120px; padding: 2px 5px; }
+
+.expandable { margin-top: 10px; height: 12px; background: #cfcfcc; font-weight: bold; color: #3f3f3b; font-size: 12px !important; padding: 8px 0 8px 4px; }
+.expandable a { float: right; margin: -2px 0 0 0; width: 16px; height: 17px; background: url('../images/admin/collapse.png') no-repeat; }
+.detail-view td, .detail-view th { font-size: 12px !important; }
+.clear { clear: both; font-size: 1px; height: 0; }
+
+/* END NEW DESIGN */
+
+#content
+{
+	width: 860px;
+	margin: 0 auto;
+}
+
+#sidebar
+{
+	padding: 20px 20px 20px 0;
+}
+
+#footer
+{
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+
+#logo
+{
+	padding: 10px 20px;
+	font-size: 200%;
+}
+
+#mainmenu
+{
+	background:white url(bg.gif) repeat-x left top;
+}
+
+#mainmenu ul
+{
+	padding:6px 20px 5px 20px;
+	margin:0px;
+}
+
+#mainmenu ul li
+{
+	display: inline;
+}
+
+#mainmenu ul li a
+{
+	color:#ffffff;
+	background-color:transparent;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 8px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+	color: #6399cd;
+	background-color:#EFF4FA;
+	text-decoration:none;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #B7D6E7;
+	border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #298dcd;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #0066A4;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #0066A4;
+}
+
+.operations li a:hover
+{
+	background: #80CFFF;
+}
+
+a.menu {margin-right: 5px; background:#f9f9f9; border:#cccccc 1px solid; padding: 5px; text-decoration: none; color:#000}
+a.menu:hover {background:#EFF4FA; border:#a0a0a0 1px solid;}
+
+
+.loading-background {background: url('../images/loading.gif') no-repeat; background-position:center; height:16px; }
+
+.width-50 { width: 50px; }
+.fa-elg { font-size: 1.5em; }
+
+.asset-color { display: inline-block; border-left: 5px solid transparent; padding: 2px 5px; background: #eaeaea; }
+
+.embed-preview { position: relative; overflow: hidden !important; }
+.img-preview { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; }
+.asset-loading { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.asset-loading img { position: absolute; top: 50%; left: 50%; width: 28px; height: 28px; margin-top: -14px; margin-left: -14px; }
+
+.jarviswidget > .pop-up-content { border: 0px !important; }
+.jarviswidget { margin: 0 0 10px 0 !important;}
+
+.remove-appended-row { float: right; display: block; width: 22px; text-align: center; margin-left: 10px; }
+
+/*level 1*/
+.inner-table { padding: 4px; margin: 8px; box-shadow: 0 0 12px #d35400; z-index: 1; background: #FDE3A7; }
+.inner-table > table { margin-bottom: 8px; }
+#dashboard_newest_cont .grid-view .active-cell { position: relative; z-index: 1; box-shadow: 0 0 12px #d35400; background: #FDE3A7 !important; }
+.active-cell.loaded:after { content: ""; position: absolute; left: 0; bottom: -10px; z-index: 1; background: #FDE3A7; height: 12px; width: 100%; }
+
+/*level 2*/
+.inner-table .inner-table { box-shadow: 0 0 12px #1f3a93; z-index: 1; background: #E4F1FE; }
+#dashboard_newest_cont .inner-table .table .active-cell { box-shadow: 0 0 12px #1f3a93; background: #E4F1FE !important; }
+.inner-table .active-cell.loaded:after { background: #E4F1FE; }
+
+/*level 3*/
+.inner-table .inner-table .inner-table { box-shadow: 0 0 12px #d35400; z-index: 1; background: #FDE3A7; }
+#dashboard_newest_cont .inner-table .inner-table .table .active-cell { box-shadow: 0 0 12px #d35400; background: #FDE3A7 !important; }
+.inner-table .inner-table .active-cell.loaded:after { background: #FDE3A7; }

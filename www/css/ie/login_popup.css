@@ -1,0 +1,49 @@
+/*---------------- Login Popup Warning -------------------*/
+.af-content .ieWarning {
+    word-wrap: break-word;
+    color: #FF0000;
+    background-color: #FFF;
+    
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    behavior: url(border-radius.htc);
+
+    margin: 2px 14px 0px 10px;
+    padding: 2px;
+}
+
+.ieWarning a {
+    float: none;
+    margin: 0px;
+    color: inherit !important;
+    font-size: inherit;
+    border-bottom: 1px solid #FF0000;
+}
+
+div.ie_warning {width:530px;}
+div.ie_warning div.warning_background 
+{
+    background:url(../../images/profile/attention_box_ie.png) no-repeat; 
+    width:530px; 
+    height:51px;
+    margin-bottom: -30px;
+    margin-left: 430px;
+}
+
+div.ie_warning div.warning_background p
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 65px;
+    top: 10px;
+    font-weight: bold;
+}
+
+div.ie_warning div.warning_background a 
+{
+    color:#FF0000; 
+    font-weight: bold;
+/*    border-bottom: 1px solid #FF0000;*/
+}

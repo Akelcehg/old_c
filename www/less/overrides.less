@@ -1,0 +1,58 @@
+// need to override just one or two small stylistic things and don't want to edit the main .less files?  Add those overrides here
+
+
+// simple pages templates 
+
+
+
+
+#login {
+	background: #222;
+	#header {
+		margin-bottom: 0;
+	}
+	#main {
+		padding: 20px 0 0 0;
+		min-height: 0;
+	}
+}
+
+.grid-view {
+	.pager {
+		.selected {
+			border: none !important;
+		}
+	}
+}
+
+.jarviswidget > header h3 {
+	height: 100%;
+	width: auto;
+	display:inline-block;
+	position: relative;
+	margin: 0;
+	line-height: 34px;
+	font-weight:normal;
+	letter-spacing: 0px;
+}
+.jarviswidget > header > h3 {
+	margin-left:10px;
+	float:left;
+	small {
+		font-size: 14px;
+		color: inherit;
+	}
+}
+.breadcrumb > li + li:before {
+	padding: 0 5px 0 10px;
+}
+
+// fixin tooltip visibility
+.smart-form .original-tooltips {
+	.tooltip {
+		background: transparent;
+	}
+}
+.fade.in {
+	opacity: 1 !important;
+}

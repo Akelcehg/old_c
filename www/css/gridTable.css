@@ -1,0 +1,136 @@
+.grid-view-loading
+{
+	background:url(loading.gif) no-repeat;
+}
+
+
+.grid-view { width: 100%; border: 0; font-size: 12px; margin-top: 15px; border-spacing: 0; border-collapse: collapse; }
+.list td { padding-left: 10px; color: #3f3f3b; border-left: 1px solid #b5b5b1; border-bottom: 1px solid #b5b5b1;  height: 34px; }
+.list tr:hover { background: #c4df9b; }
+.list tr.first:hover { background: none; }
+
+.grid-view table.items
+{
+	background: white;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px #D0E3EF solid;
+}
+
+.grid-view table.items th, .grid-view table.items td
+{
+	padding: 0 0 0 10px; margin: 0; color: #3f3f3b; border-left: 1px solid #b5b5b1;  height: 20px;
+}
+
+.gred-view tr:hover { background: #c4df9b; } 
+
+.grid-view table.items th
+{
+	border: 0; background: #65655f; color: #fff; padding-left: 10px;
+	height: 40px; /*border-left: 1px solid #b5b5b1;*/ font-size: 12px; font-weight: normal;
+}
+
+.grid-view table.items th a
+{
+	color: #EEE;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.grid-view table.items th a:hover
+{
+	color: #FFF;
+}
+
+.grid-view table.items th a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+	background: #FFF;
+}
+
+.grid-view table.items tr.odd
+{
+	background: #FFF;
+}
+
+.grid-view table.items tr.selected
+{
+	background: #BCE774;
+}
+
+.grid-view table.items tr:hover
+{
+	background: #ECFBD4;
+}
+
+.grid-view .link-column img
+{
+	border: 0;
+}
+
+.grid-view .button-column
+{
+	text-align: center;
+	width: 60px;
+}
+
+.grid-view .button-column img
+{
+	border: 0;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+.grid-view .summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.grid-view .pager
+{
+	margin: 5px 0 0 0;
+	text-align: right;
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+.grid-view .userCell img { float: left; }
+.grid-view .userCell a { float: left; margin: 10px 0 0 2px; }
+table.items a { color: #000 !important; }
+table.items a:hover { text-decoration: none; }
+
+.pagination { padding: 10px 0;  }
+.pagination .yiiPager { float: left; margin: 0 0 10px 0 !important; }
+.pagination .perpage { float: right !important; color: #020000 !important; font-size: 12px !important; }
+.pagination .yiiPager a { font-size: 12px !important; color: #020000 !important; text-decoration: none !important; background: none !important; border: 0 !important;}
+.pagination .yiiPager a.text { text-decoration: underline !important; }
+.pagination .yiiPager .selected a { text-decoration: underline !important; color: #007236 !important; }
+
+.unit .grid-view { margin-top: 10px; width: 100%; padding: 0; border-spacing: 0; border-collapse: collapse; }
+.unit .grid-view table.items th { padding-left: 10px; height: 28px; background: #CFCFCC !important; color: #3F3F3B !important; font-weight: bold; }
+.unit .grid-view table.items td { text-align: left; color: #3f3f3b !important; font-size: 12px; height: 28px; border: 0 !important; border-bottom: 1px solid #b5b5b1 !important; padding-left: 10px; }
+.unit .grid-view td.bold, .bold { font-weight: bold; float: none !important; }

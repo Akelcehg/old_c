@@ -1,0 +1,162 @@
+#footer-background {
+	background: url('../images/bottom-menu-bg.png') repeat-x;
+	position: relative;
+        height: 40px;
+	bottom: 0;
+        left: 0;
+	width: 100%;
+        margin:auto 0;
+        margin-top: -40px;
+}
+#footer-menu-container {
+	width: 1060px;
+	margin: 0 auto;
+}
+#footer-menu {
+	height: 35px;
+	list-style: none;
+	margin: 0px;
+	float: left;
+        padding: 5px 0 0;
+}
+#footer-menu li {
+	color: #474747;
+	margin: 9px 8px;
+	display: inline-block;
+	/* IE 7 Fix for inline-block, do not remove */
+	zoom: 1;
+	/*display:inline;*/
+}
+#footer-menu li a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #d8d6d6;
+	text-decoration: none;
+}
+#footer-menu li a:hover {
+	color: #ffffff;
+}
+#footer-menu-small {
+	height: 40px;
+	float: right;
+	list-style: none;
+	padding: 0;
+	margin: 0px auto;
+}
+#footer-menu-small li {
+	color: #474747;
+	margin: 10px 6px;
+	font-size: 15px;
+	display: inline-block;
+	/* IE 7 Fix for inline-block, do not remove */
+	zoom: 1;
+	*display:inline;
+}
+#footer-menu-small li a {
+	font-size: 10px;
+	font-weight: bold;
+	color: #cecece;
+	text-decoration: none;
+}
+#footer-menu-small li span {
+	font-size: 10px;
+	font-weight: bold;
+	color: #cecece;
+	text-decoration: none;
+}
+#footer-menu-small li a:hover {
+	color: #ffffff;
+}
+
+/*----------------Login Popup Styles-----------------*/
+
+.af-content {
+	width: 300px;
+	min-height: 90px;
+	background: #e2e2e2;
+    padding-bottom: 2px;
+    height: 100%;
+}
+.ajax-login-form .ui-dialog-title {
+	font-size: 14px !important;	
+}
+.ajax-login-form label {
+	float: left;
+	width: 85px;
+	margin: 6px 0 8px 10px;
+	font-size: 14px;
+}
+.ajax-login-form input {
+	float: left;
+	width: 190px;
+	margin: 5px 0 8px 0;
+	border: 0;
+}
+.ajax-login-form .ajax-sbm {
+	width: auto;
+	margin: 0;
+	background: #eaeaea;
+	color: #000;
+	margin: 9px 5px 0 0;
+	height: 18px;
+	float: right;
+	font-size: 10px;
+}
+.ajax-login-form a {
+	float: left;
+	margin: 10px 5px 0 7px;
+	color: #d4d4d4 !important;
+	text-decoration: none;
+	font-size: 11px;
+	border-bottom: 1px solid #808080;
+}
+#login-dialog {
+	padding: 0;
+	background: #2c2c2c;
+}
+#login-dialog .errorMessage {
+	color: #CC0000;
+	padding-left: 10px;
+	font-size: 11px;
+        width: 220px;
+}
+
+.ajax-login-form .buttons {
+    height: 37px;
+}
+
+.rememberMeCheckbox {
+	width: 14px !important;
+	margin-top: 7px !important;
+	margin-left: 94px !important;
+}
+
+
+.ui-dialog-titlebar {
+	padding: 1px 0 1px 7px !important;		
+}
+
+#socials {
+	float: left;
+	padding-left: 5px;
+	padding-top: 12px;
+	width: 213px;
+}
+
+div.socials {padding-left: 80px !important;}
+
+#socials a {
+	padding-left: 3px;
+	float: left;
+	width: 16px;
+	height: 16px;
+}
+#socials .fb {
+	float: left;
+	margin-left: 5px;
+}
+
+
+.row {
+    color: #707070;
+}

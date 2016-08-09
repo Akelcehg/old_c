@@ -1,0 +1,66 @@
+@signal-color: #316694;
+.signal-keyframes(@prefix: ~'') {
+	from {
+		@{prefix}transform: scale(0.25);
+		opacity: 1.0;
+	}
+	95% {
+		@{prefix}transform: scale(1.3);
+		opacity: 0;
+	}
+	to {
+		@{prefix}transform: scale(0.3);
+		opacity: 0;
+	}
+}
+@keyframes pulsate {
+	.signal-keyframes;
+}
+@-moz-keyframes pulsate {
+	.signal-keyframes(-moz-);
+}
+@-webkit-keyframes pulsate {
+	.signal-keyframes(-webkit-);
+}
+#map_canvas3 {
+	// get the container that's just outside the marker image, which just happens to have our Marker title in it
+	div.gmnoprint[title="I might be here"] {
+		animation: pulsate 1.5s ease-in-out infinite;
+		-moz-animation: pulsate 1.5s ease-in-out infinite;
+		-webkit-animation: pulsate 1.5s ease-in-out infinite;
+		border:1pt solid #fff;
+		// make a circle
+		-moz-border-radius:51px;
+		-webkit-border-radius:51px;
+		border-radius:51px;
+		// multiply the shadows, inside and outside the circle
+		-moz-box-shadow:
+			inset 0 0 5px @signal-color, 
+			inset 0 0 5px @signal-color;
+		-webkit-box-shadow:
+			inset 0 0 5px @signal-color, 
+			inset 0 0 5px @signal-color;
+		box-shadow:
+			inset 0 0 5px @signal-color, 
+			inset 0 0 5px @signal-color;
+		// set the ring's new dimension and re-center it
+		height:51px!important;
+		margin:-18px 0 0 -18px;
+		width:51px!important;
+		// background-color: rgba(red(@signal-color), green(@signal-color), blue(@signal-color),0.5);
+		background-color: rgba(255,255,255,0.5);
+	}
+	// hide the superfluous marker image since it would expand and shrink with its containing element
+	div.gmnoprint[title="I might be here"] img {
+		display:none;
+		left: 50% !important;
+		top: 50% !important;
+		margin: -8.5px 0 0 -8.5px !important;
+	}
+	// compensate for iPhone and Android devices with high DPI, add iPad media query
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (device-width: 768px) {
+		div.gmnoprint[title="I might be here"] {
+			margin:-10px 0 0 -10px;
+		}
+	}
+}

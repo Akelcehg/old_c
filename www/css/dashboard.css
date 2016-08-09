@@ -1,0 +1,36 @@
+/* 
+    Document   : dashboard
+    Created on : Oct 10, 2012, 2:52:10 AM
+    Author     : ketjuni2
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#filter-form select {
+    width: 150px;
+    float: left;
+    margin-bottom: 7px; 
+}
+
+#filter-form label {
+    width: 77px;
+    display: block;
+    float: left;
+    margin-left: 13px; 
+}
+
+#filter { padding: 5px 0; }
+
+#project-jobs-grid table tr:nth-child(4) td { background:#DDFF99; }
+
+#project-jobs-grid table tr:nth-child(6) td { background:#CCD5FF; }
+
+#project-jobs-grid table tr:nth-child(8) td { background:#FFDD99; }
+
+#project-jobs-grid table tr:nth-child(10) td { background:#F6CCFF; }
+
+
